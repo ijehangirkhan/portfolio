@@ -2,9 +2,9 @@
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
-
- 
+import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaShippingFast, FaLaptopCode, FaDocker } from "react-icons/fa";
+import { MdCloudDone, MdSecurity, MdCode } from "react-icons/md"
+import { RiShieldCheckFill, RiFileSettingsLine } from "react-icons/ri"
 
 export const servicesData = [
     // {
@@ -14,13 +14,13 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: 'Infrastructure Automation',
+        icon: <MdCode /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'Configuration Management',
+        icon: <FaLaptopCode />
     },
     // {
     //     id: 4,
@@ -35,13 +35,13 @@ export const servicesData = [
 
     {
         id: 6,
-        title: 'Web Design',
-        icon: <BsCodeSlash />
+        title: 'Containerization and Orchestration',
+        icon: <FaDocker />
     },
     {
         id: 7,
-        title: 'Photography',
-        icon: <FaCameraRetro />
+        title: 'Monitoring and Logging',
+        icon: <RiShieldCheckFill />
     },
     // {
     //     id: 8,
@@ -50,8 +50,8 @@ export const servicesData = [
     // }, 
     {
         id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
+        title: 'Cloud Infrastructure Management',
+        icon: <MdCloudDone />
     },
     // {
     //     id: 10,
@@ -60,18 +60,18 @@ export const servicesData = [
     // },
     {
         id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
+        title: 'Security And Compliance',
+        icon: <MdSecurity />
     },
-    // {
-    //     id: 12,
-    //     title: 'Audio Transcription',
-    //     icon: <AiFillAudio />
-    // },
+    {
+        id: 12,
+        title: 'Continuous Integration',
+        icon: <RiFileSettingsLine />
+    },
     {
         id: 13,
-        title: 'Blog Posting',
-        icon: <FaRegNewspaper />
+        title: 'Continuous Deployment',
+        icon: <FaShippingFast />
     },
 
 ]
