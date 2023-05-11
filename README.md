@@ -35,7 +35,7 @@
     - SKILLS
     - EXPERIENCE
     - PROJECTS 
-    - Achievements <br />
+    - Certifications <br />
 - SERVICES 
     - TESTIMONIALS <br />
 - BLOG
@@ -201,10 +201,10 @@ yarn start
 │   │   ├── About
 │   │   │   ├── About.css
 │   │   │   └── About.js
-│   │   ├── Achievements
-│   │   │   ├── Achievements.css
-│   │   │   └── Achievements.js
-│   │   │   └── AchievementCard.js
+│   │   ├── Certifications
+│   │   │   ├── Certifications.css
+│   │   │   └── Certifications.js
+│   │   │   └── CertificationCard.js
 │   │   ├── BackToTop
 │   │   │   ├── BackToTop.css
 │   │   │   └── BackToTop.js
@@ -257,7 +257,7 @@ yarn start
 │   │   └── ThemeContext.js
 │   ├── data
 │   │   ├── aboutData.js
-│   │   ├── achievementData.js
+│   │   ├── CertificationsData.js
 │   │   ├── blogData.js
 │   │   ├── contactsData.js
 │   │   ├── educationData.js
@@ -332,7 +332,7 @@ export const headerData = {
 
 > #### Experience - [`src/data/experienceData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/experienceData.js)
 
-> #### Achievements - [`src/data/achievementData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/achievementData.js)
+> #### Certifications - [`src/data/certificationsData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/certificationsData.js)
 
 > #### Services - [`src/data/servicesData.js`](https://github.com/hhhrrrttt222111/developer-portfolio/blob/master/src/data/servicesData.js)
 

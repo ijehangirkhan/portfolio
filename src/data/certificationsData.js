@@ -1,6 +1,6 @@
-export const achievementData = {
-    bio : "Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I have no data to support the quality of my work. If you have lots of relevant experience, the heading statement of your resume will be a summary.",
-    achievements : [
+export const certificationsData = {
+    bio : "I have earned certifications in a variety of domains. These certifications not only validate my proficiency but also demonstrate my passion for personal and professional growth. By regularly pursuing new certifications, I strive to expand my expertise, broaden my horizons, and tackle complex challenges with confidence and innovation.",
+    certifications : [
         {
             id : 1,
             title : 'AWS Certified Solutions Architect – Associate',
@@ -14,7 +14,7 @@ export const achievementData = {
             title : 'HashiCorp Certified: Terraform Associate',
             details : 'Earners of this certification know the basic concepts, skills, and use cases associated with open source HashiCorp Terraform',
             date : 'Jan, 2023',
-            field : 'Automation',
+            field : 'IaC',
             image : '/Terraform.png'
         },
 
@@ -27,9 +27,9 @@ export const achievementData = {
 
 /*
 
-export const achievementData = {
+export const certificationsData = {
     bio : "",
-    achievements : []
+    certifications : []
 }
 
 */
