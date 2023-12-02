@@ -6,6 +6,7 @@
     'Kubernetes',
     'Linux',
     'AWS',
+    'GCP',
     'MySQL',
     'Terraform',
     'Grafana',

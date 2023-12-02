@@ -18,7 +18,8 @@ import {
     // FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
-import { FiPhone, FiAtSign } from 'react-icons/fi';
+// import { FiPhone, FiAtSign } from 'react-icons/fi';
+import { FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -292,7 +293,7 @@ function Contacts() {
                                 {contactsData.email}
                             </p>
                         </a>
-                        <a
+                        {/* <a
                             href={`tel:${contactsData.phone}`}
                             className='personal-details'
                         >
@@ -302,7 +303,7 @@ function Contacts() {
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.phone}
                             </p>
-                        </a>
+                        </a> */}
                         <div className='personal-details'>
                             <div className={classes.detailsIcon}>
                                 <HiOutlineLocationMarker />

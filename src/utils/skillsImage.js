@@ -84,7 +84,6 @@ import jenkins from '../assets/svg/skills/jenkins.svg'
 import githubActions from '../assets/svg/skills/github-actions.svg'
 import ansible from '../assets/svg/skills/ansible.svg'
 
-
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
