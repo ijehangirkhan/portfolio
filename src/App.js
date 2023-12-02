@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
@@ -8,13 +8,20 @@ import ScrollToTop from './utils/ScrollToTop'
 
 import './App.css'
 
+function PageViewTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send('pageview', { path: location.pathname });
+  }, [location]);
+
+  return null; // This component does not render anything
+}
+
 function App() {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
-    // Initialize Google Analytics
-    ReactGA.initialize('YOUR-GA-TRACKING-CODE');
-
     // Track initial page view
     ReactGA.send('pageview', { path: window.location.pathname });
   }, []);
@@ -26,6 +33,7 @@ function App() {
   return (
     <div className="app">
       <Router>
+        <PageViewTracker />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />} />
