@@ -83,6 +83,11 @@ import prometheus from '../assets/svg/skills/prometheus.svg'
 import jenkins from '../assets/svg/skills/jenkins.svg'
 import githubActions from '../assets/svg/skills/github-actions.svg'
 import ansible from '../assets/svg/skills/ansible.svg'
+import gitlab from '../assets/svg/skills/gitlab.svg'
+import tekton from '../assets/svg/skills/tekton.svg'
+import argocd from '../assets/svg/skills/argocd.svg'
+import openshift from '../assets/svg/skills/openshift.svg'
+import newRelic from '../assets/svg/skills/new-relic.svg'
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -253,6 +258,16 @@ export const skillsImage = (skill) => {
             return githubActions;
         case 'ansible':
             return ansible;
+        case 'gitlab':
+            return gitlab;
+        case 'tekton':
+            return tekton;
+        case 'argo cd':
+            return argocd;
+        case 'openshift':
+            return openshift;
+        case 'new relic':
+            return newRelic;
         default:
             break;
     }

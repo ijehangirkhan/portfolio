@@ -3,8 +3,8 @@ export const educationData = [
         id: 1,
         institution: 'GIKI School and College',
         course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        startYear: '2011',
+        endYear: '2013'
     },
     {
         id: 2,
