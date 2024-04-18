@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.86e2c7c5.chunk.css",
-    "main.js": "/static/js/main.fcc1b136.chunk.js",
-    "main.js.map": "/static/js/main.fcc1b136.chunk.js.map",
+    "main.js": "/static/js/main.82da63ba.chunk.js",
+    "main.js.map": "/static/js/main.82da63ba.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.607da58f.js",
     "runtime-main.js.map": "/static/js/runtime-main.607da58f.js.map",
     "static/css/2.7b8a7a4e.chunk.css": "/static/css/2.7b8a7a4e.chunk.css",
@@ -20,6 +20,7 @@
     "static/media/after-effects.3c076652.svg": "/static/media/after-effects.3c076652.svg",
     "static/media/angular.d4cb4fa5.svg": "/static/media/angular.d4cb4fa5.svg",
     "static/media/ansible.ab91e3a6.svg": "/static/media/ansible.ab91e3a6.svg",
+    "static/media/argocd.3fdaacb9.svg": "/static/media/argocd.3fdaacb9.svg",
     "static/media/aws.0510b15a.svg": "/static/media/aws.0510b15a.svg",
     "static/media/azure.a4419965.svg": "/static/media/azure.a4419965.svg",
     "static/media/bash.2f8dd33e.svg": "/static/media/bash.2f8dd33e.svg",
@@ -86,6 +87,7 @@
     "static/media/girl3.46f7c62b.svg": "/static/media/girl3.46f7c62b.svg",
     "static/media/git.a0b8447e.svg": "/static/media/git.a0b8447e.svg",
     "static/media/github-actions.dbc3c4ee.svg": "/static/media/github-actions.dbc3c4ee.svg",
+    "static/media/gitlab.bd03bfda.svg": "/static/media/gitlab.bd03bfda.svg",
     "static/media/go.cda9e1cf.svg": "/static/media/go.cda9e1cf.svg",
     "static/media/grafana.948954dd.svg": "/static/media/grafana.948954dd.svg",
     "static/media/graphql.be1dc316.svg": "/static/media/graphql.be1dc316.svg",
@@ -110,12 +112,14 @@
     "static/media/microsoftoffice.c3a1f4f1.svg": "/static/media/microsoftoffice.c3a1f4f1.svg",
     "static/media/mongoDB.6c6da702.svg": "/static/media/mongoDB.6c6da702.svg",
     "static/media/mysql.f9e45d29.svg": "/static/media/mysql.f9e45d29.svg",
+    "static/media/new-relic.d573ab16.svg": "/static/media/new-relic.d573ab16.svg",
     "static/media/nextJS.fc272ac2.svg": "/static/media/nextJS.fc272ac2.svg",
     "static/media/nginx.14c0011a.svg": "/static/media/nginx.14c0011a.svg",
     "static/media/numpy.5bdfa40b.svg": "/static/media/numpy.5bdfa40b.svg",
     "static/media/nuxtJS.81cb52af.svg": "/static/media/nuxtJS.81cb52af.svg",
     "static/media/one.a3146128.svg": "/static/media/one.a3146128.svg",
     "static/media/opencv.0f128460.svg": "/static/media/opencv.0f128460.svg",
+    "static/media/openshift.4053395c.svg": "/static/media/openshift.4053395c.svg",
     "static/media/orangeTheme-boy.0ebb8c72.svg": "/static/media/orangeTheme-boy.0ebb8c72.svg",
     "static/media/orangeTheme-girl.d0ad58be.svg": "/static/media/orangeTheme-girl.d0ad58be.svg",
     "static/media/photoshop.1114b31f.svg": "/static/media/photoshop.1114b31f.svg",
@@ -145,6 +149,7 @@
     "static/media/svelte.7b116dd5.svg": "/static/media/svelte.7b116dd5.svg",
     "static/media/swift.a030128a.svg": "/static/media/swift.a030128a.svg",
     "static/media/tailwind.254c4865.svg": "/static/media/tailwind.254c4865.svg",
+    "static/media/tekton.51b1caa0.svg": "/static/media/tekton.51b1caa0.svg",
     "static/media/tensorflow.6d6f2e37.svg": "/static/media/tensorflow.6d6f2e37.svg",
     "static/media/terraform.8f818255.svg": "/static/media/terraform.8f818255.svg",
     "static/media/three.d4f751d1.svg": "/static/media/three.d4f751d1.svg",
@@ -165,6 +170,6 @@
     "static/css/2.7b8a7a4e.chunk.css",
     "static/js/2.14b94f7c.chunk.js",
     "static/css/main.86e2c7c5.chunk.css",
-    "static/js/main.fcc1b136.chunk.js"
+    "static/js/main.82da63ba.chunk.js"
   ]
 }
