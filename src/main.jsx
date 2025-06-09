@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import ThemeContextProvider from './contexts/ThemeContext'
 import ReactGA from 'react-ga4';
 
@@ -18,5 +17,3 @@ ReactDOM.render(
 
 const TRACKING_ID = "G-90V2XLRLKK";
 ReactGA.initialize(TRACKING_ID);
-
-reportWebVitals();

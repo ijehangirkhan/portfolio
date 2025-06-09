@@ -25,7 +25,9 @@ function Certifications() {
                         details={achieve.details}
                         date={achieve.date}
                         field={achieve.field}
-                        image={achieve.image}/>
+                        image={achieve.image}
+                        theme={theme}
+                        />
                     ))}
                 </div>
             </div>

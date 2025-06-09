@@ -1,10 +1,10 @@
 export const certificationsData = {
-    bio : "I have earned certifications in a variety of domains. These certifications not only validate my proficiency but also demonstrate my passion for personal and professional growth. By regularly pursuing new certifications, I strive to expand my expertise, broaden my horizons, and tackle complex challenges with confidence and innovation.",
+    bio : "I hold certifications across various domains, reflecting my commitment to continuous learning and professional growth.",
     certifications : [
         {
             id : 1,
             title : 'AWS Certified Solutions Architect – Associate',
-            details : 'This certification validate your expertise and showcase your ability to build secure and robust solutions using architectural design principles based on customer requirement.',
+            details : 'This certification validate your expertise and showcase your ability to build secure and robust solutions using architectural design principles.',
             date : 'Jan, 2022 - Jan, 2025',
             field : 'Cloud',
             image : '/AWS.png'

@@ -115,9 +115,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1380px) {
-    .certifications-card {
+    /* .certifications-card {
         justify-content: flex-start;
-    }
+    } */
 
     .certifications-body {
         display: flex;

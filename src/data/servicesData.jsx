@@ -2,7 +2,7 @@
 import { BiShoppingBag, BiPencil } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaShippingFast, FaLaptopCode, FaDocker } from "react-icons/fa";
+import { FaInternetExplorer, FaChalkboardUser, FaCameraRetro, FaPinterest, FaVideo, FaTabletScreenButton, FaTruckFast, FaLaptopCode, FaDocker } from "react-icons/fa6";
 import { MdCloudDone, MdSecurity, MdCode } from "react-icons/md"
 import { RiShieldCheckFill, RiFileSettingsLine } from "react-icons/ri"
 
@@ -30,7 +30,7 @@ export const servicesData = [
     // {
     //     id: 5,
     //     title: 'Tutoring',
-    //     icon: <FaChalkboardTeacher />
+    //     icon: <faChalkboardUser />
     // },
 
     {
@@ -71,7 +71,7 @@ export const servicesData = [
     {
         id: 13,
         title: 'Continuous Deployment',
-        icon: <FaShippingFast />
+        icon: <FaTruckFast />
     },
 
 ]

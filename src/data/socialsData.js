@@ -4,7 +4,7 @@ export const socialsData = {
     linkedIn: 'https://www.linkedin.com/in/ijehangirkhan',
     instagram: 'https://www.instagram.com/ijehangirkhan',
     codepen: 'https://codepen.io/',
-    twitter: 'https://twitter.com/ijehangirkhan',
+    twitter: 'https://x.com/ijehangirkhan',
     reddit: 'https://www.reddit.com/user/',
     blogger: 'https://www.blogger.com/',
     medium: 'https://medium.com/@',

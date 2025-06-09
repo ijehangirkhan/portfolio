@@ -17,7 +17,7 @@
   --img-size: 400px;
   position: absolute;
   left: 35%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) !important;
   width: var(--img-size);
   height: var(--img-size);
   object-fit: cover;
@@ -167,7 +167,7 @@
     left: 50%;
     top: 30%;
     border: 8px solid #eaeaea;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
   }
   .landing--container-left {
     flex: initial;

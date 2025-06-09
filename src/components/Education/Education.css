@@ -28,12 +28,16 @@
     margin-bottom: 2rem;
 }
 
+.education-description > div {
+    width: 100%;
+}
+
 .education-card {
     display: flex;
     flex-direction: row;
     align-items:flex-start;
     justify-content: flex-start;
-    width: 90%;
+    /* width: 90%; */
     /* height: 140px; */
     padding: 1.5rem;
     border-radius: 20px;
@@ -49,6 +53,8 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .educard-img > img {

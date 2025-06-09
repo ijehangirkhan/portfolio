@@ -25,6 +25,22 @@
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: center;
+}
+
+.experience-description > div {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 140px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .experience-card {
@@ -48,6 +64,8 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .expcard-img > img {

@@ -432,19 +432,27 @@ export const educationData = [
 
 | Client Side Packages  |
 | :-------------: |
-| @material-ui/core  |
-| @material-ui/icons  |
+| @mui/material  |
+| @mui/icons-material  |
+| @emotion/react |
+| @emotion/styled |
 | axios |
+| framer-motion |
 | react-fast-marquee |
 | react-helmet  |
 | react-icons  |
-| react-reveal |
 | react-router-dom  |
 | react-router-hash-link  |
 | react-slick  |
 | slick-carousel |
 | validator |
 
+## Animations
+- [Framer Motion](https://www.framer.com/motion/)
+
+## Icons
+- [MUI Icons](https://mui.com/material-ui/material-icons/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 <br />
 

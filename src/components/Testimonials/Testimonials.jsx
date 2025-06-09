@@ -2,7 +2,7 @@ import React, { useContext, useRef } from 'react';
 
 import Slider from 'react-slick';
 
-import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { FaQuoteLeft, FaArrowRight, FaArrowLeft } from 'react-icons/fa6';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';

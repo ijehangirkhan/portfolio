@@ -1,9 +1,9 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/Jehangir Khan - CV.pdf'
 
 export const headerData = {
     name: 'Jehangir Khan',
     title: "DevOps Engineer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught his attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. He knew what was coming and he hoped he was prepared.",
+    desciption: "Passionate about building reliable, scalable systems and automating worflows. I thrive on solving complex problems and turning ideas into robust solutions. Let’s create something amazing together.",
     image: '/Jehangir.png',
     resumePdf: resume
 }
