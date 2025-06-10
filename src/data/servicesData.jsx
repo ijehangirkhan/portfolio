@@ -1,8 +1,5 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
-import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer, FaChalkboardUser, FaCameraRetro, FaPinterest, FaVideo, FaTabletScreenButton, FaTruckFast, FaLaptopCode, FaDocker } from "react-icons/fa6";
+import { FaTruckFast, FaLaptopCode, FaDocker } from "react-icons/fa6";
 import { MdCloudDone, MdSecurity, MdCode } from "react-icons/md"
 import { RiShieldCheckFill, RiFileSettingsLine } from "react-icons/ri"
 
@@ -75,7 +72,3 @@ export const servicesData = [
     },
 
 ]
-
-// Uncomment your required service.
-// Couldn't find the required services? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
-// You can also add on your own 😉.

@@ -46,6 +46,13 @@ const StyledDrawer = styled(Drawer)((props) => ({
         '@media (max-width: 960px)': {
             width: '12em',
         },
+        '@media (max-width: 600px)': {
+            width: '100vw',
+            height: '100vh',
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+            // padding: '0',
+        },
     },
 }));
 
@@ -55,20 +62,20 @@ const CloseButtonIcon = styled(CloseIcon)((props) => ({
     cursor: 'pointer',
     color: props.theme.primary,
     position: 'absolute',
-    right: 40,
-    top: 40,
+    right: 20,
+    top: 20,
     transition: 'color 0.2s',
     '&:hover': {
         color: props.theme.tertiary,
     },
-    '@media (max-width: 960px)': {
-        right: 20,
-        top: 20,
-    },
+    // '@media (max-width: 960px)': {
+    //     right: 20,
+    //     top: 20,
+    // },
 }));
 
 const DrawerItem = styled('div')((props) => ({
-    margin: '2rem auto',
+    margin: '0.5rem auto',
     borderRadius: '78.8418px',
     background: props.theme.secondary,
     color: props.theme.primary,
@@ -86,9 +93,13 @@ const DrawerItem = styled('div')((props) => ({
         color: props.theme.secondary,
     },
     '@media (max-width: 960px)': {
+        margin: '1rem auto',
         width: '100%',
         padding: '0 15px',
         height: '55px',
+    },
+    '@media (max-width: 600px)': {
+        margin: '1rem auto',
     },
 }));
 
