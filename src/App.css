@@ -4,3 +4,7 @@
     /* --primaryFont: 'Raleway', sans-serif; */
 }
 
+.app {
+    min-height: 100vh;
+}
+

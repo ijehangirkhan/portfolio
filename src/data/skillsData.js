@@ -22,7 +22,8 @@
     'Github Actions',
     'Tekton',
     'Argo CD',
-    'Ansible'
+    'Ansible',
+    'Cloudflare'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

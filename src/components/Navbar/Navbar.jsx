@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
@@ -20,8 +20,10 @@ const NavMenuIcon = styled(IoMenuSharp)((props) => ({
     cursor: 'pointer',
     transform: 'translateY(-10px)',
     transition: 'color 0.3s',
-    '&:hover': {
-        color: props.theme.primary,
+    '@media (hover: hover) and (pointer: fine)': {
+        '&:hover': {
+            color: props.theme.primary,
+        },
     },
     '@media (max-width: 960px)': {
         fontSize: '2.5rem',
@@ -156,12 +158,22 @@ function Navbar() {
     const { theme, setHandleDrawer } = useContext(ThemeContext);
     const [open, setOpen] = useState(false);
 
+    const releaseDrawerFocus = () => {
+        if (typeof document === 'undefined') return;
+
+        const activeElement = document.activeElement;
+        if (activeElement instanceof HTMLElement) {
+            activeElement.blur();
+        }
+    };
+
     const handleDrawerOpen = () => {
         setOpen(true);
         setHandleDrawer();
     };
 
     const handleDrawerClose = () => {
+        releaseDrawerFocus();
         setOpen(false);
         setHandleDrawer();
     };
@@ -239,11 +251,9 @@ function Navbar() {
                                         variants={itemVariants}
                                         custom={index}
                                     >
-                                        <NavLink 
+                                        <HashLink 
                                             to={item.to} 
-                                            smooth={true} 
-                                            spy='true' 
-                                            duration={2000}
+                                            smooth
                                         >
                                             <DrawerItem theme={theme}>
                                                 <DrawerIcon theme={theme}>
@@ -251,7 +261,7 @@ function Navbar() {
                                                 </DrawerIcon>
                                                 <DrawerLink theme={theme}>{item.text}</DrawerLink>
                                             </DrawerItem>
-                                        </NavLink>
+                                        </HashLink>
                                     </motion.div>
                                 ))}
                             </div>

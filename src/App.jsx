@@ -21,13 +21,31 @@ function PageViewTracker() {
 function App() {
   const { theme } = useContext(ThemeContext);
 
+  React.useEffect(() => {
+    if (typeof document === 'undefined') return undefined;
+
+    const { body } = document;
+    const html = document.documentElement;
+    const previousBodyBg = body.style.backgroundColor;
+    const previousHtmlBg = html.style.backgroundColor;
+    const nextBg = theme.secondary;
+
+    body.style.backgroundColor = nextBg;
+    html.style.backgroundColor = nextBg;
+
+    return () => {
+      body.style.backgroundColor = previousBodyBg;
+      html.style.backgroundColor = previousHtmlBg;
+    };
+  }, [theme.secondary]);
+
   // console.log("%cDEVELOPER PORTFOLIO", `color:${theme.primary}; font-size:50px`);
   // console.log("%chttps://github.com/hhhrrrttt222111/developer-portfolio", `color:${theme.tertiary}; font-size:20px`);
   // console.log = console.warn = console.error = () => {};
 
   return (
-    <div className="app">
-      <Router>
+    <div className="app" style={{ backgroundColor: theme.secondary }}>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <PageViewTracker />
         <ScrollToTop />
         <Routes>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Button } from '@mui/material';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { styled } from '@mui/material/styles';
 
 import './Landing.css';
@@ -133,7 +133,7 @@ function Landing() {
                         <p>{headerData.desciption}</p>
 
                         <div className='lcr-buttonContainer'>
-                            {headerData.resumePdf && (
+                            {/* {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
                                     download='Jehangir Khan - CV'
@@ -142,11 +142,11 @@ function Landing() {
                                 >
                                     <ResumeButton theme={theme}>Download CV</ResumeButton>
                                 </a>
-                            )}
+                            )} */}
                             <div>
-                                <NavLink to='/#contacts' smooth={true} spy='true' duration={2000}>
+                                <HashLink to='/#contacts' smooth>
                                     <ContactButton theme={theme}>Contact</ContactButton>
-                                </NavLink>
+                                </HashLink>
                             </div>
                         </div>
                     </div>
