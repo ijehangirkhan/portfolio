@@ -77,16 +77,16 @@ const CloseButtonIcon = styled(CloseIcon)((props) => ({
 }));
 
 const DrawerItem = styled('div')((props) => ({
-    margin: '0.5rem auto',
+    margin: 'clamp(0.2rem, 1vh, 0.5rem) auto',
     borderRadius: '78.8418px',
     background: props.theme.secondary,
     color: props.theme.primary,
     width: '85%',
-    height: '60px',
+    height: 'clamp(32px, calc((100vh - 200px) / 8), 60px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    padding: '0 20px',
+    padding: '0 clamp(14px, 2vw, 20px)',
     boxSizing: 'border-box',
     border: `2px solid ${props.theme.primary}`,
     transition: 'background-color 0.2s, color 0.2s',
@@ -94,14 +94,26 @@ const DrawerItem = styled('div')((props) => ({
         background: props.theme.primary,
         color: props.theme.secondary,
     },
+    '@media (max-height: 720px)': {
+        borderWidth: '1.5px',
+    },
+    '@media (max-height: 620px)': {
+        padding: '0 clamp(12px, 2vw, 16px)',
+    },
     '@media (max-width: 960px)': {
-        margin: '1rem auto',
+        margin: 'clamp(0.5rem, 1.2vh, 1rem) auto',
         width: '100%',
-        padding: '0 15px',
-        height: '55px',
+        padding: '0 clamp(12px, 4vw, 18px)',
+    },
+    '@media (max-width: 960px) and (max-height: 700px)': {
+        margin: 'clamp(0.3rem, 1vh, 0.75rem) auto',
+    },
+    '@media (max-width: 960px) and (max-height: 600px)': {
+        padding: '0 clamp(10px, 4vw, 16px)',
     },
     '@media (max-width: 600px)': {
-        margin: '1rem auto',
+        margin: 'clamp(0.6rem, 1.4vh, 1rem) auto',
+        padding: '0 clamp(12px, 6vw, 18px)',
     },
 }));
 
@@ -111,16 +123,48 @@ const DrawerLink = styled('span')((props) => ({
     fontSize: '1.3rem',
     fontWeight: 600,
     color: props.theme.primary,
+    '@media (max-height: 720px)': {
+        fontSize: '1.15rem',
+        width: '78%',
+    },
+    '@media (max-height: 620px)': {
+        fontSize: '1.05rem',
+    },
+    '@media (max-height: 540px)': {
+        fontSize: '0.95rem',
+    },
     '@media (max-width: 960px)': {
         fontSize: '1.125rem',
+    },
+    '@media (max-width: 960px) and (max-height: 700px)': {
+        fontSize: '1rem',
+    },
+    '@media (max-width: 960px) and (max-height: 600px)': {
+        fontSize: '0.95rem',
     },
 }));
 
 const DrawerIcon = styled('span')((props) => ({
     fontSize: '1.6rem',
     color: props.theme.primary,
+    '@media (max-height: 720px)': {
+        marginRight: '0.2rem',
+        fontSize: '1.4rem',
+    },
+    '@media (max-height: 620px)': {
+        fontSize: '1.3rem',
+    },
+    '@media (max-height: 540px)': {
+        fontSize: '1.15rem',
+    },
     '@media (max-width: 960px)': {
         fontSize: '1.385rem',
+    },
+    '@media (max-width: 960px) and (max-height: 700px)': {
+        fontSize: '1.2rem',
+    },
+    '@media (max-width: 960px) and (max-height: 600px)': {
+        fontSize: '1.1rem',
     },
 }));
 
