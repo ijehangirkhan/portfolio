@@ -1,244 +1,260 @@
 .certifications {
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: flex-start;
-    padding: 3rem;
+    gap: 2rem;
+    padding: clamp(2rem, 5vw, 3.5rem);
 }
 
 .certifications-body {
+    flex: 1 1 220px;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex: 0.4;
-    width: 90%;
+    gap: 0.85rem;
 }
 
 .certifications-body h1 {
     font-family: var(--primaryFont);
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+    margin: 0 0 0.5rem;
 }
 
 .certifications-body h4 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-family: var(--primaryFont);
     font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .certifications-cards {
-    padding: 2rem;
+    flex: 1.4 1 460px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 5%;
-    width: 100%;
-    flex: 0.6;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 0;
 }
 
 .certifications-card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 170px;
-    padding: 1.5rem;
-    border-radius: 20px;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    transition: background-color 200ms ease-in-out;
-    width: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) minmax(70px, 110px);
+    gap: 1.25rem;
+    align-items: center;
+    padding: 1.35rem 1.75rem;
+    border-radius: 22px;
+    margin: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 200ms ease;
 }
 
-.achievecard-content {
+.certcard-timeline {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.certcard-timeline-line {
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--cert-accent, #6a62ff), transparent);
+    opacity: 0.7;
+}
+
+.certcard-timeline-node {
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+    border: 2px solid var(--cert-accent, #6a62ff);
+    background-color: var(--cert-soft, #151515);
+    margin-top: 6px;
+}
+
+.certcard-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 65%;
-   
+    gap: 0.65rem;
 }
 
-.achievecard-details2 {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
+.certcard-meta {
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 0.5rem;
     font-family: var(--primaryFont);
-    font-size: 18px;
-    position: absolute;
-    bottom: 7px;
-    left: 25px;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
-.achievecard-details2 h5 {
-   width: 50%;
+.certcard-date {
+    font-weight: 600;
+    color: var(--cert-text, #fff);
 }
 
-.achievecard-field {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
+.certcard-field {
+    display: inline-flex;
     align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 600;
 }
 
-.achievecard-field svg {
-    margin-right: 6px;
+.certcard-field svg {
+    font-size: 0.9rem;
 }
 
-.achievecard-details1 h2 {
+.certcard-details h2 {
     font-family: var(--primaryFont);
-    font-weight: 500;
-    font-size: 1.225rem;
-    line-height: 110%;
-    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 0;
 }
 
-.achievecard-details1 p {
-    font-size: 1.10rem;
-    font-family: Roboto;
-    font-weight: 400;
+.certcard-details p {
+    font-size: 0.95rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.55;
+    margin: 0;
+    color: var(--cert-muted, rgba(255, 255, 255, 0.7));
 }
 
-.achievecard-imgcontainer {
-    width: 23%;
+.certcard-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.achievecard-imgcontainer > img {
-    width: 150px;
-    height: 130px;
-    border-radius: 10px;
+.certcard-image img {
+    width: 100%;
+    max-width: 110px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 992px) and (max-width: 1380px) {
-    /* .certifications-card {
-        justify-content: flex-start;
-    } */
+@media (max-width: 992px) {
+    .certifications {
+        flex-direction: column;
+        min-height: auto;
+        gap: 1rem;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+    }
+
+    .certifications-body,
+    .certifications-cards {
+        width: 100%;
+    }
 
     .certifications-body {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        flex: 0.3;
-        width: 90%;
-    }
-    .certifications-body h1 {
-        font-family: var(--primaryFont);
-        font-size: 3.1rem;
-    }
-    
-    .certifications-cards {
-        padding: 1rem;
-        margin-left: 1%;
-        width: 100%;
-        flex: 0.7;
-    }
-    .achievecard-imgcontainer {
-       margin-left: 1rem;
-    }
-
-}
-
-@media screen and (max-width: 992px) {
-    .certifications{
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 2rem;
+        text-align: center;
     }
 
+    .certifications-body h4 {
+        max-width: 85%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .certifications {
+        padding: clamp(0.9rem, 4vw, 1.6rem);
+        padding-bottom: calc(clamp(0.9rem, 4vw, 1.6rem) + 2.0rem);
+        gap: 0.5rem;
+    }
 
     .certifications-body {
-        width: 100%;
+        gap: 0.4rem;
+        align-items: center;
+        text-align: center;
     }
 
-    .certifications-body h1 {
-        font-size: 2.5rem;
-    }
-
-    .certifications-cards {
-        margin-left: 0%;
-        padding: 1rem 0;
-        width: 80%;
-        margin-top: 1rem;
+    .certifications-body h4 {
+        max-width: 90%;
     }
 
     .certifications-card {
-        margin-left: 0px;
-        height: fit-content;
+        grid-template-columns: 18px minmax(0, 1fr) 95px;
+        grid-template-rows: auto auto;
+        padding: 0.85rem 1rem 1.1rem;
+        column-gap: 0.85rem;
+        row-gap: 0.4rem;
+        border-radius: 16px;
+        align-items: start;
     }
 
-    .achievecard-content {
-        width: 70%;
+    .certcard-content {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding-right: 0.5rem;
+        gap: 0.35rem;
+        flex-direction: column-reverse; /* places title above meta */
     }
 
-    .achievecard-details1 {
-        margin-bottom: 20px;
-    }
-
-    .achievecard-details1 h2 {
-        font-size: 1.15rem;
-    }
-
-    .achievecard-details1 p {
-        font-size: 0.95rem;
-    }
-
-    .achievecard-details2 {
-        width: 85%;
-        position: absolute;
-        bottom: 7px;
-        left: 25px;
-        font-size: 0.95rem;
-    }
-
-    .achievecard-imgcontainer {
-        width: 30%;
+    .certcard-meta {
+        width: 100%;
         display: flex;
-       justify-content: center;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0.2rem;
+        margin-top: 0.05rem;
     }
 
-    .achievecard-imgcontainer > img {
-        width: 80px;
-        height: 70px;
+    .certcard-field {
+        font-size: 0.8rem;
+        border-radius: 8px;
+        padding: 0.3rem 0.8rem;
     }
-    
-}
 
-@media screen and (max-width: 600px) {
-    .certifications{
-        padding: 1rem;
+    .certcard-date {
+        font-size: 0.82rem;
     }
-    .certifications-cards {
+
+    .certcard-details h2 {
+        font-size: 1rem;
+    }
+
+    .certcard-details p {
+        display: none;
+    }
+
+    .certcard-image {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+        justify-content: flex-end;
+        align-self: center;
         width: 100%;
     }
-    .achievecard-details2 {
-        font-size: 0.95rem;
+
+    .certcard-image img {
+        max-width: 95px;
+        border-radius: 12px;
+    }
+
+    .certcard-timeline {
+        grid-row: 1 / 3;
+    }
+
+    .certcard-timeline-line {
+        top: 10px;
+        bottom: 10px;
+    }
+
+    .certcard-timeline-node {
+        width: 12px;
+        height: 12px;
     }
 }
-
-@media screen and (max-width: 600px) {
-
-    /* .certifications-body h4 {
-        font-size: 1.5rem;
-    } */
-
-    .achievecard-details1 p {
-        font-size: 0.95rem;
-    }
-    .achievecard-imgcontainer > img {
-        width: 70px;
-        height: 60px;
-    }
-    .achievecard-details2 {
-        font-size: 0.95rem;
-    }
-}
-

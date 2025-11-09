@@ -14,7 +14,7 @@ function Certifications() {
                 <div className="certifications" id="certifications" style={{backgroundColor: theme.secondary}}>
                 <div className="certifications-body">
                     <h1 style={{color: theme.primary}}>Certifications</h1>
-                    <h4 style={{color:theme.tertiary}}>{certificationsData.bio}</h4>
+                    <h4 style={{color:theme.tertiary80}}>{certificationsData.bio}</h4>
                 </div>
                 <div className="certifications-cards">
                     {certificationsData.certifications.map(achieve => ( 

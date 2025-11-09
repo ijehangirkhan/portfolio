@@ -13,7 +13,7 @@ export const certificationsData = {
             id : 2,
             title : 'HashiCorp Certified Terraform Associate',
             details : 'Earners of this certification know the basic concepts, skills, and use cases associated with open source HashiCorp Terraform',
-            date : 'Jan, 2023 - Jan 2025',
+            date : 'Jan, 2023 - Jan, 2025',
             field : 'IaC',
             image : '/Terraform.png'
         },
